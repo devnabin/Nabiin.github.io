@@ -11,20 +11,7 @@
 
     <div class="popup">
     </div>
-   <!-- <div class="sociallinks">
-   <a href="www.fb.com">
-     <i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
-   </a>
-   <a href="www.nabin.com">
-     <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
-   </a>
-   <a href="www.asdf.com">
-     <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-   </a>
-   <a href="www.sdflv.com">
-     <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-   </a>
-   </div> -->
+
     <div class="goup" id="myBtn" onclick="topFunction()">
       <svg
         width="1em"
@@ -45,8 +32,8 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#myexperience">Experience</a></li>
-          <!-- <li><a href="#projects">Projects</a></li> -->
-          <li><a href="#">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="logo">
@@ -66,7 +53,7 @@
                 <i class="fa fa-twitter-square fa-3x" style="color: #1DA1F2;" aria-hidden="true"></i>
               </a>
               <a href="www.asdf.com">
-                <i class="fa fa-github fa-3x"  aria-hidden="true"></i>
+                <i class="fa fa-github fa-3x"style="color:#000";  aria-hidden="true"></i>
               </a>
               <a href="www.sdflv.com">
                 <i class="fa fa-linkedin-square fa-3x" style="color:  #2867B2;" aria-hidden="true"></i>
@@ -162,7 +149,65 @@
     </section>
 
     <section id="projects">
- 
+      <h2>Projects</h2>
+      <div class="container">
+        <div class="description">
+          <h3>Chat Application</h3>
+          <p class="description__main">
+Chat Application where A user create room and other user can join that group and can text any one in that group.
+</p>
+<h4>Tools Used :-</h4>
+<ul>
+  <li>Vs code</li>
+  <li>Node.js</li>
+  <li>socket.io</li>
+</ul>      
+        </div>
+        <div class="pic">
+          <img src="./projects/chatpp/chatpp.jpg" alt="">
+          <div class="pic__text">
+            <div class="pic__text__view">
+              <a href="">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+          View repo</a>
+            </div>
+            <div class="pic__text__livedemo">
+              <a href="">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container">
+        <div class="description">
+          <h3>Chat Application</h3>
+          <p class="description__main">
+Chat Application where A user create room and other user can join that group and can text any one in that group.
+</p>
+<h4>Tools Used :-</h4>
+<ul>
+  <li>Vs code</li>
+  <li>Node.js</li>
+  <li>socket.io</li>
+</ul>      
+        </div>
+        <div class="pic">
+          <img src="./projects/chatpp/chatpp.jpg" alt="">
+          <div class="pic__text">
+            <div class="pic__text__view">
+              <a href="">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+          View repo</a>
+            </div>
+            <div class="pic__text__livedemo">
+              <a href="">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </section>
 
     <section id="contact">
@@ -187,15 +232,15 @@
             Your Name <span>&lowast;</span>
           </label>
           <br>
-          <input type="text" name="" id="" placeholder="Enter Name">
+          <input type="text" name=""  placeholder="Enter Name">
 <br>
           <label for="">Your Mail address <span>&lowast;</span></label>
           <br>
-          <input type="email" name="" id="" placeholder="Enter Email">
+          <input type="email" name="" placeholder="Enter Email">
         <br>
           <label for="">Your Contact</label>
           <br>
-          <input type="text" name="" id="" placeholder="Enter Contact Number">
+          <input type="text" name="" placeholder="Enter Contact Number">
 <br>
       <a href="">send</a>
         </div>
@@ -228,10 +273,10 @@
         document.documentElement.scrollTop > 20
       ) {
         mybutton.style.display = "flex";
-        // document.querySelector('.sociallinks').classList.toggle('toggle')
+      
       } else {
         mybutton.style.display = "none";
-        // document.querySelector('.sociallinks').classList.toggle('toggle')
+       
 
       }
     }
@@ -247,6 +292,8 @@
   
     function showcolor(color){
       // document.querySelector('body').style.background = color
+      // document.querySelector('body').style.h2 = color
+
    const popup = document.querySelector('.popup')
    popup.style.background = color;
    popup.classList.add('tg')
