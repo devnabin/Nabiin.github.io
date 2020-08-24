@@ -7,8 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nabin Bhandari</title>
   </head>
-  <body>
+  <style>
 
+@media all and (max-width : 647px) {
+/* header part */
+.logo {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: 90vh;
+position: relative;
+}
+
+.skills__item__1 {
+display: none;
+}
+
+.skills__item__2{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+}
+
+
+/* my experience  */
+.myexperience__block{
+  margin-top: -6rem;
+}
+}
+
+ @media all and (max-width :847px) {
+   #contact{
+     padding: 0;
+   }
+   .contact__me .item {
+padding: 0 5rem;
+}
+  .wrap{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+align-content: center;
+}
+
+@media all and (max-width :422px) {
+  .workwithme h3 {
+    font-size: 3rem;
+}
+.workwithme p {
+    font-size: 1.8rem;
+    margin: 5rem 0;
+}
+} 
+} 
+  </style>
+  <body>
     <div class="popup">
     </div>
 
@@ -36,9 +91,9 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="logo">
-        <div class="about">
-          <img src="./mypic.jpg" alt="" />
+      <div class="logo">   
+        <div class="img__maker">
+        </div>
           <p>
             My name is Nabin Bhandari. I'm from Dang Nepal and I love
             JavaScript.
@@ -60,10 +115,10 @@
               </a>
        
           </p>
-        </div>
+   
       </div>
 
-      <div class="skills__menu">
+   <div class="skills__menu">
         <div class="skills__item__1">
         <p class="skills-text">
           My skills:-
@@ -84,7 +139,7 @@
           <div class="item color__item--5" onclick="showcolor('#2ecc71')" ></div>
           <div class="item color__item--6" onclick="showcolor('#1abc9c')"></div>
         </div>
-      </div>
+      </div> 
     </header>
     <section id="myexperience">
       <div class="myexperience">
@@ -132,10 +187,10 @@
               <li>Terminal</li>
             </ul>
           </div>
-          <div class="myexperience__block__backend">
+          <div class="myexperience__block__language">
             <picture>
-              <svg width="5rem" height="5rem" viewBox="0 0 16 16" class="bi bi-cpu" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+              <svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-code-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"/>
               </svg>
             </picture>
             <h3>Programming Language</h3>
@@ -214,6 +269,7 @@ Chat Application where A user create room and other user can join that group and
       <h2>Contacts</h2>
       <div class="contact__block">
         
+        <div class="wrap">
         <div class="contact__me">
      <!-- <label for=""><i class="fa fa-map-marker" aria-hidden="true"></i></label>
        <p>Ghorahi-18 Dang , Nepal</p> -->
@@ -223,8 +279,6 @@ Chat Application where A user create room and other user can join that group and
 
        </label>
         </div>
-
-
 
         <div class="contact__you">
           <h3>Tell About Youself <span>&hearts;</span> </h3>
@@ -244,6 +298,7 @@ Chat Application where A user create room and other user can join that group and
 <br>
       <a href="">send</a>
         </div>
+      </div>
       </div>
     </section>
     
