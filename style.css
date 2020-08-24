@@ -33,8 +33,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  /* font-weight: 300;
   font-weight: bold;
+   */
   color: #000;
 }
 
@@ -123,6 +124,7 @@ header nav ul li {
 }
 
 header a {
+  /* font-size: rem; */
   text-decoration: none;
   padding: 1rem;
   transition: 0.5s color;
@@ -375,16 +377,111 @@ picture {
 #projects {
   height: auto;
   padding: 20rem;
+  /* text-align: center; */
+}
+
+#projects .figma__test{
+  margin:0 auto;
+  display: inline-block;
+  height: 50rem;
+  width: 85%;
+  border-radius: 5rem;
+  /* box-shadow:0 0 .7rem .3rem rgba(0, 0, 0, 0.171); */
+box-shadow: 0 0 .6rem .5rem rgba(0, 0, 0, 0.137);
+
+  padding: 5rem;
+
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.img_edit{
+width: 55rem;
+border-radius: 3rem;
+box-shadow: 0 0 .6rem .5rem rgba(0, 0, 0, 0.137);
+
+}
+
+#projects .figma__test h3{
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+#projects .figma__test p{
+  font-size: 1.7rem;
+  margin-bottom: 5rem;
+}
+
+#projects .figma__test h4{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+
+}
+#projects .figma__test .icon__tools{
+  margin-bottom: 5rem;
+
+}
+
+#projects .figma__test .icon__tools img{
+width: 3rem;
+margin-right: 1.5rem;
+}
+
+#projects .figma__test .but a{
+  letter-spacing: .06rem;
+display: inline-block;
+text-decoration: none;
+font-size: 1.7rem;
+text-transform: uppercase;
+font-weight: 500;
+padding: 2rem 6rem;
+border-radius: 5rem;
+box-shadow: 0 0 .6rem .5rem rgba(0, 0, 0, 0.137);
+margin-right: 3rem;
+
+}
+
+.wrap__1{
+  width: 50rem;
+  /* background: rgba(0, 0, 0, 0.24); */
 }
 
 #projects .container {
-  padding: 3rem;
-  height: 50rem;
+  /* padding: 3rem;
+  height: 50rem; */
   width: 100%;
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   margin-bottom: 5rem;
   transition: 0.4s all ease;
+}
+
+.description {
+  padding: 0 3rem;
+  /* 
+  width: 50rem; */
+  /* background: #000; */
+  /* flex-grow: 1; */
+}
+
+.pic {
+  /* background-color: #e67e22; */
+  position: relative;
+ 
+  width: 600px;
+  height: 400px;
+  /* overflow: hidden; */
+  /* display: inline; */
+  color: #fff;
+}
+
+.pic img {
+  width: 550px;
+  height: 350px;
 }
 
 #projects .container:hover {
@@ -392,10 +489,6 @@ picture {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.247);
 }
 
-.description {
-  padding: 0 3rem;
-  width: 50%;
-}
 
 .description h3 {
   font-size: 3rem;
@@ -433,19 +526,8 @@ picture {
   /* background: rgb(250, 14, 14); */
 }
 
-.pic {
-  /* background-color: #e67e22; */
-  position: relative;
-  width: 50%;
-  /* overflow: hidden; */
-  /* display: inline; */
-  color: #fff;
-}
-.pic img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
+
+
 
 .pic .pic__text {
   position: absolute;
@@ -558,7 +640,7 @@ i {
 
 
 .contact__you:hover {
-  transform: translateY(-3rem);
+  /* transform: translateY(-3rem); */
   box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.493);
 }
 
