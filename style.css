@@ -587,7 +587,7 @@ i {
 .contact__you {
   width: 50rem;
   height: 100%;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.7s;
   box-shadow: 2px 2px 0.6rem rgba(0, 0, 0, 0.493);
   text-align: center;
@@ -631,8 +631,8 @@ i {
 }
 
 .contact__you:hover {
-  /* transform: translateY(-3rem); */
-  box-shadow: 2px 2px 1rem rgba(0, 0, 0, 0.493);
+  transform: translateY(-2rem) scale(1.01);
+  /* box-shadow: 2px 2px 1.2rem rgba(0, 0, 0, 0.493); */
 }
 
 .contact__you h3 {
