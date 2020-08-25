@@ -150,8 +150,8 @@ header nav ul li:hover a {
 
 .logo {
   display: flex;
- justify-content: center;
- align-items: center;
+  justify-content: center;
+  align-items: center;
   /* flex-wrap: wrap; */
   height: 90vh;
   position: relative;
@@ -184,8 +184,6 @@ header .fa:hover {
   transform: scale(1.1) translateY(-0.6rem);
 }
 
-
-
 .logo p #protfolio--but {
   display: inline-block;
   margin: 5rem 0;
@@ -197,9 +195,7 @@ header .fa:hover {
   letter-spacing: 0.3rem;
 }
 
-
-
-.logo  p #protfolio--but:hover {
+.logo p #protfolio--but:hover {
   color: #fff;
   border: 0.1rem solid transparent;
   background: blueviolet;
@@ -209,20 +205,19 @@ header .fa:hover {
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.377);
 }
 
-.logo .img__maker{
-width: 30rem; 
-height: 30rem; 
-border-radius: 50%;
-display: inline-block;
-box-shadow: 0  1rem 3rem rgba(0, 0, 0, 0.247);
-border: 2px solid rgba(0, 0, 0, 0.418);
-background-image: url('./mypic.jpg');
-background-size: cover;
-/* background-position: center; */
-background-repeat: no-repeat;
-overflow: hidden;
+.logo .img__maker {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.247);
+  border: 2px solid rgba(0, 0, 0, 0.418);
+  background-image: url("./mypic.jpg");
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
-
 
 .skills__menu {
   position: absolute;
@@ -354,7 +349,7 @@ h2::after {
 .myexperience__block__backend,
 .myexperience__block__tools,
 .myexperience__block__language {
-  margin-top:5rem;
+  margin-top: 5rem;
   width: 40rem;
 }
 
@@ -364,6 +359,7 @@ h2::after {
   font-weight: 200;
   line-height: 4rem;
 }
+
 .myexperience__block h3 {
   font-size: 2.5rem;
 }
@@ -380,85 +376,92 @@ picture {
   /* text-align: center; */
 }
 
-#projects .figma__test{
-  margin:0 auto;
-  display: inline-block;
+
+#projects .container {
+  margin: 0 auto;
   height: 50rem;
-  width: 85%;
+  margin-bottom: 5rem;
+  width: 70%;
   border-radius: 5rem;
-  /* box-shadow:0 0 .7rem .3rem rgba(0, 0, 0, 0.171); */
-box-shadow: 0 0 .6rem .5rem rgba(0, 0, 0, 0.137);
-
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.226);
   padding: 5rem;
-
-
-  display: flex;
-  justify-content: space-evenly;
+  position: relative;
+  transition: 0.8s all;
 }
 
-.img_edit{
-width: 55rem;
-border-radius: 3rem;
-box-shadow: 0 0 .6rem .5rem rgba(0, 0, 0, 0.137);
-
+.img_edit {
+  position: absolute;
+  top: 50%;
+  right: -25rem;
+  transform: translate(0, -50%);
+  width: 60%;
+  border-radius: 3rem;
+  box-shadow: 0 0 0.6rem 0.5rem rgba(0, 0, 0, 0.137);
+  transition: 0.8s all ease;
 }
 
-#projects .figma__test h3{
+.img_edit:hover {
+  top: 50%;
+  transform: scale(1.03) translate(0, -50%);
+}
+
+#projects .container h3 {
   font-size: 3.5rem;
   font-weight: 500;
   margin-bottom: 5rem;
 }
 
-#projects .figma__test p{
+#projects .container p {
   font-size: 1.7rem;
   margin-bottom: 5rem;
 }
 
-#projects .figma__test h4{
+#projects .container h4 {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 1rem;
-
 }
-#projects .figma__test .icon__tools{
+#projects .container .icon__tools {
   margin-bottom: 5rem;
-
 }
 
-#projects .figma__test .icon__tools img{
-width: 3rem;
-margin-right: 1.5rem;
+#projects .container .icon__tools img {
+  width: 3rem;
+  margin-right: 1.5rem;
 }
 
-#projects .figma__test .but a{
-  letter-spacing: .06rem;
-display: inline-block;
-text-decoration: none;
-font-size: 1.7rem;
-text-transform: uppercase;
-font-weight: 500;
-padding: 2rem 6rem;
-border-radius: 5rem;
-box-shadow: 0 0 .6rem .5rem rgba(0, 0, 0, 0.137);
-margin-right: 3rem;
+#projects .container .but a {
+  letter-spacing: 0.06rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 2rem 6rem;
+  border-radius: 5rem;
+  box-shadow: 0 0 0.6rem 0.5rem rgba(0, 0, 0, 0.137);
+  margin-right: 3rem;
 
+  transition: 0.2s all;
 }
 
-.wrap__1{
+#projects .container .but a:hover {
+  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0.137),
+    0 0 0.6rem 0.5rem rgba(0, 0, 0, 0.137);
+  transform: translateY(-0.3rem) scale(1.02);
+}
+
+#projects .container .but a:active {
+  box-shadow: 0 1rem 0.5rem rgba(0, 0, 0, 0),
+    0 0 0.6rem 0.5rem rgba(0, 0, 0, 0.137);
+  transform: translateY(0rem) scale(1);
+}
+
+.wrap__1 {
   width: 50rem;
   /* background: rgba(0, 0, 0, 0.24); */
 }
 
-#projects .container {
-  /* padding: 3rem;
-  height: 50rem; */
-  width: 100%;
-  display: flex;
-  /* flex-wrap: wrap; */
-  justify-content: space-evenly;
-  margin-bottom: 5rem;
-  transition: 0.4s all ease;
-}
 
 .description {
   padding: 0 3rem;
@@ -471,7 +474,7 @@ margin-right: 3rem;
 .pic {
   /* background-color: #e67e22; */
   position: relative;
- 
+
   width: 600px;
   height: 400px;
   /* overflow: hidden; */
@@ -484,10 +487,6 @@ margin-right: 3rem;
   height: 350px;
 }
 
-#projects .container:hover {
-  transform: scale(1.01) translateY(-1rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.247);
-}
 
 
 .description h3 {
@@ -526,9 +525,6 @@ margin-right: 3rem;
   /* background: rgb(250, 14, 14); */
 }
 
-
-
-
 .pic .pic__text {
   position: absolute;
   width: 100%;
@@ -562,32 +558,30 @@ i {
   text-transform: uppercase;
 }
 
-.wrap{
+.wrap {
   height: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   /* background: rgb(160, 9, 9); */
- /* position: relative; */
+  /* position: relative; */
 }
 
 /* /contacts */
 .contact__block {
   position: relative;
-    
 }
 
 .contact__me {
- /* margin-right: 5rem; */
-  width:50rem;
+  /* margin-right: 5rem; */
+  width: 50rem;
   height: 100%;
   vertical-align: center;
   margin: auto 0;
- /* position: absolute; */
- /* top: 0; */
- /* background: rgb(25, 55, 226); */
- /* align-self: center; */
-
+  /* position: absolute; */
+  /* top: 0; */
+  /* background: rgb(25, 55, 226); */
+  /* align-self: center; */
 }
 
 .contact__you {
@@ -600,7 +594,6 @@ i {
   padding: 5rem 0px;
   /* background: rgb(141, 5, 5); */
 }
-
 
 .contact__me .item {
   display: flex;
@@ -636,8 +629,6 @@ i {
   font-weight: 500;
   color: blueviolet;
 }
-
-
 
 .contact__you:hover {
   /* transform: translateY(-3rem); */
@@ -779,3 +770,125 @@ footer #copyright {
   font-weight: 100;
 }
 /* /footer section */
+
+/*  */
+/*  */
+/* media quary */
+
+
+
+@media all and (max-width :1300px) {
+  .wrap__1{
+    margin:  0 auto;
+ width: auto;
+  /* background: rgba(0, 0, 0, 0.24); */
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+#projects .container{
+  height: auto;
+  /* position: relative; */
+}
+
+.img_edit{
+  display: block;
+  margin: 0 auto;
+  position: static;
+  top: 0;
+  right:0;
+  left: 0;
+  transform: translate(0 , 0);
+width: 50rem;
+height: 30rem;
+box-shadow: 0 0 .6rem .5rem rgba(0, 0, 0, 0.137);
+transition: .8s all ease;
+}
+
+.img_edit:hover{
+  transform: scale(1.03);
+}
+} 
+
+
+@media all and (max-width :761px) {
+  #projects{
+    padding: 0;
+  }
+
+  .img_edit{
+  display: block;
+  }
+
+}
+@media all and (max-width :1040px) {
+  #projects .container .but a{
+margin-bottom: 2rem;
+}
+
+
+.img_edit{
+display: none;
+}
+}
+
+
+@media all and (max-width : 647px) {
+/* header part */
+.logo {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+height: 90vh;
+position: relative;
+margin-top: -5rem;
+}
+
+.logo p {
+margin-top: 1rem;
+}
+
+.skills__item__1 {
+display: none;
+}
+
+.skills__item__2{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+}
+
+
+/* my experience  */
+.myexperience__block{
+  margin-top: -6rem;
+}
+}
+
+
+ @media all and (max-width :847px) {
+   #contact{
+     padding: 0;
+   }
+   .contact__me .item {
+padding: 0 5rem;
+}
+  .wrap{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+align-content: center;
+}
+
+@media all and (max-width :422px) {
+  .workwithme h3 {
+    font-size: 3rem;
+}
+.workwithme p {
+    font-size: 1.8rem;
+    margin: 5rem 0;
+}
+} 
+} 
