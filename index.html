@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nabin Bhandari</title>
-    <link rel="shortcut icon" href="./assets/images/fav.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/fav.svg"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -14,13 +18,31 @@
     <link rel="stylesheet" href="scss/main.css" />
   </head>
   <body>
+    <!-- go up btn  -->
+    <div class="goup" id="myBtn" onclick="topFunction()">
+      <svg
+        width="1em"
+        height="1em"
+        viewBox="0 0 16 16"
+        class="bi bi-caret-up"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M3.204 11L8 5.519 12.796 11H3.204zm-.753-.659l4.796-5.48a1 1 0 0 1 1.506 0l4.796 5.48c.566.647.106 1.659-.753 1.659H3.204a1 1 0 0 1-.753-1.659z"
+        />
+      </svg>
+    </div>
+
+    <!-- page starting -->
     <section class="main">
       <nav>
         <!-- site logo -->
         <img src="./assets/images/logo.png" alt="" />
         <ul>
           <li class="active"><a href="#home">home</a></li>
-          <li><a href="#experiences">experiences</a></li>
+          <li><a href="#experiences">my knowledges</a></li>
           <li><a href="#projects">projects</a></li>
           <li><a href="#blog">blog</a></li>
           <li><a href="#contact">contact</a></li>
@@ -69,10 +91,46 @@
       </div>
     </section>
     <section class="projects">
-      <div class="box box--1">hello</div>
-      <div class="box box--2">world</div>
-      <div class="box box--3"></div>
-      <div class="box box--4"></div>
+      <h2 id="experiences">my knowledges</h2>
+      <div class="boxes">
+        <div class="box box--1">
+          <img src="/assets/svg/laptop.svg" alt="" />
+          <h3>frontend</h3>
+          <ul>
+            <li>html 5</li>
+            <li>css 3</li>
+            <li>scss</li>
+            <li>javascript</li>
+          </ul>
+        </div>
+        <div class="box box--2">
+          <img src="/assets/svg/backend.svg" alt="" />
+          <h3>backend</h3>
+          <ul>
+            <li>node js</li>
+            <li>mongo db</li>
+          </ul>
+        </div>
+        <div class="box box--3">
+          <img src="/assets/svg/code.svg" alt="" />
+          <h3>programming</h3>
+          <ul>
+            <li>javascript</li>
+            <li>C/C++</li>
+          </ul>
+        </div>
+        <div class="box box--4">
+          <img src="/assets/svg/tools.svg" alt="" />
+          <h3>tools</h3>
+          <ul>
+            <li>github</li>
+            <li>gitbash-version control</li>
+            <li>vs-code</li>
+            <li>terminal</li>
+          </ul>
+        </div>
+      </div>
     </section>
+    <script src="app.js"></script>
   </body>
 </html>

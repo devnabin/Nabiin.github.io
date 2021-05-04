@@ -19,18 +19,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-//show color
-
-function showcolor(color) {
-  // document.querySelector("body").style.background = color;
-  // document.querySelector("body").style.h2 = color;
-  const popup = document.querySelector(".popup");
-  popup.style.background = color;
-  popup.classList.add("tg");
-  popup.textContent = color + " is copied to clipboard";
-  setTimeout(() => {
-    popup.textContent = "";
-    popup.classList.remove("tg");
-  }, 3000);
-}
