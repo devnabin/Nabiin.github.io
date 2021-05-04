@@ -1,0 +1,12 @@
+.active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  border-bottom: 1px solid $color-primary;
+  display: block;
+}
+.active a{
+    font-weight: 500;
+}

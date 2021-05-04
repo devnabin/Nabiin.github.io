@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem 0 5rem;
+
+  img {
+    width: 15rem;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 1rem;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        height: 0.7rem;
+        width: 0.7rem;
+        border-radius: 50%;
+        background-color: $color-primary;
+        display: none;
+      }
+      &:hover::before {
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        color: $color-primary;
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight:400;
+      }
+    }
+  }
+}
