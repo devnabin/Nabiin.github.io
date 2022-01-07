@@ -1,3 +1,7 @@
+.projects {
+  height: 100vh;
+}
+
 *,
 *::after,
 *::before {
@@ -53,8 +57,8 @@ body {
   height: 4rem;
   width: 4rem;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.267);
-          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.267);
+  -webkit-box-shadow: 1px 1px 9px 3px #1b17171a;
+          box-shadow: 1px 1px 9px 3px #1b17171a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,11 +86,16 @@ body {
 
 .main {
   height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: max-content max-content;
-      grid-template-rows: -webkit-max-content -webkit-max-content;
-      grid-template-rows: max-content max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
@@ -94,15 +103,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 3rem 0;
-  height: 35vw;
 }
 
 .main main .about h1 {
@@ -124,7 +130,6 @@ body {
   color: #ffff;
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
-  text-transform: uppercase;
   padding: 1rem 2rem;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -138,35 +143,36 @@ body {
 }
 
 .main main .about a:active {
+  color: #000;
   -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.329);
           box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.329);
 }
 
 .main main .about a img {
+  color: blue;
   vertical-align: middle;
-  width: 3rem;
+  width: 2rem;
 }
 
 .main main .profilpic {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
   background-color: #000;
   cursor: pointer;
-  width: 25rem;
-  height: 25rem;
+  width: 30rem;
+  height: 30rem;
   border-radius: 50%;
   display: inline-block;
   -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.247);
           box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.247);
-  border: 2px solid #000;
   background-image: url("../../assets/images/mypic.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   overflow: hidden;
 }
 
 .main .social-media-icons {
-  position: absolute;
-  bottom: 4rem;
-  left: 13rem;
+  padding: 0 0 10rem 20rem;
 }
 
 .main .social-media-icons a {
@@ -213,54 +219,57 @@ body {
   font-weight: 500;
 }
 
-.projects {
-  padding: 20rem 0;
-  height: 100vh;
-}
-
-.projects h2 {
+h2 {
   font-size: 4rem;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 10rem;
+  margin: 15rem 0 10rem 0;
 }
 
-.projects .boxes {
+.knowledges {
+  height: 100vh;
+}
+
+.knowledges .boxes {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 20rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.projects .boxes .box {
+.knowledges .boxes .box {
   height: 35rem;
   width: 25rem;
-  -webkit-box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.164);
-          box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.164);
+  -webkit-box-shadow: 1px 1px 9px 3px #1b17171a;
+          box-shadow: 1px 1px 9px 3px #1b17171a;
   text-align: center;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
-.projects .boxes .box h3 {
+.knowledges .boxes .box h3 {
   font-size: 3rem;
   font-weight: 450;
   margin: 0 0 1.6rem 0;
 }
 
-.projects .boxes .box ul li {
+.knowledges .boxes .box ul li {
   font-size: 1.8rem;
   list-style: none;
 }
 
-.projects .boxes .box img {
+.knowledges .boxes .box img {
   margin-top: 4rem;
   width: 5rem;
 }
 
-.projects .boxes .box:hover {
+.knowledges .boxes .box:hover {
   -webkit-transform: translateY(-0.8rem);
           transform: translateY(-0.8rem);
 }
@@ -272,7 +281,12 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 3rem 5rem 0 5rem;
+  width: 100vw;
+  position: fixed;
+  background: #e60000;
 }
 
 nav img {

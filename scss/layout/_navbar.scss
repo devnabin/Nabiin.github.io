@@ -1,7 +1,11 @@
 nav {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 3rem 5rem 0 5rem;
+  width: 100vw;
+  position:fixed;
+  background: rgb(230, 0, 0);
 
   img {
     width: 15rem;

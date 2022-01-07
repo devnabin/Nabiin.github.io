@@ -1,23 +1,30 @@
-.projects {
-  padding: 20rem 0;
+h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 15rem 0 10rem 0;
+  // padding: 20rem 0 10rem 0;
+}
+.knowledges {
   height: 100vh;
-  h2 {
-    font-size: 4rem;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 10rem;
-  }
+
   .boxes {
+    // background: rgb(197, 2, 2);
     cursor: pointer;
     display: flex;
+    padding: 0 20rem;
+    // align-items: center;
+    justify-content: center;
     justify-content: space-around;
 
     .box {
       height: 35rem;
       width: 25rem;
-      box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.164);
+      // box-shadow: 0rem 0rem 2rem 0rem rgba(0, 0, 0, 0.164);
+      box-shadow: 1px 1px 9px 3px #1b17171a;
+
       text-align: center;
-      transition: .4s ease-in-out;
+      transition: 0.4s ease-in-out;
       h3 {
         font-size: 3rem;
         font-weight: 450;
@@ -34,10 +41,9 @@
         margin-top: 4rem;
         width: 5rem;
       }
-    &:hover{
-      transform: translateY(-.8rem);
+      &:hover {
+        transform: translateY(-0.8rem);
+      }
     }
-    }
-    
   }
 }
